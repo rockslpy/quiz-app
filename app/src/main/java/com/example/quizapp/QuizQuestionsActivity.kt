@@ -5,7 +5,6 @@ import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.core.content.ContextCompat
@@ -67,7 +66,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
         progressBar.progress = mCurrentPosition
         tv_progress.text = "$mCurrentPosition" + "/" + progressBar.max
-        tv_question.text = question!!.question
+        tv_question.text = question.question
         iv_image.setImageResource(question.image)
         tv_option_one.text = question.optionOne
         tv_option_two.text = question.optionTwo
@@ -148,7 +147,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     if(mCurrentPosition ==  mQuestionsList!!.size){
                         btn_submit.text = "FINISH"
                     }else{
-                        btn_submit.text = "GO TO THE NEXT QUESTION"
+                        btn_submit.text = "NEXT QUESTION"
                     }
                     mSelectedOptionPosition = 0
                 }

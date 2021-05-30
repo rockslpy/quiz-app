@@ -22,14 +22,14 @@
             android:gravity="center"
             android:textColor="#363A43"
             android:textSize="22sp"
-            android:text="What country does this flag belong to?" />
+            android:text="What does this figure refer to?" />
 
         <ImageView
             android:id="@+id/iv_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:src="@drawable/ic_flag_of_argentina" />
+            android:src="@drawable/ic_java" />
 
         <LinearLayout
             android:id="@+id/ll_progress_details"

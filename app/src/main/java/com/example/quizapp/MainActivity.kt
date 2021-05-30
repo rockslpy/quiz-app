@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             val et_name = findViewById<AppCompatEditText>(R.id.et_name)
             if(et_name.text.toString().isEmpty()){
                 Toast.makeText(this,
-                    "Please enter your name", Toast.LENGTH_SHORT).show()
+                    "Did you forget something?", Toast.LENGTH_SHORT).show()
             }else{
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
                 intent.putExtra(Constants.USER_NAME, et_name.text.toString())
